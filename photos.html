@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1000px auto;
+        grid-template-rows:600px auto;
+        grid-gap: 10px;
+      }
+    </style>
+    <title>Fun with Photos in JavaScript</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="photos.js"></script>
+  </head>
+  <body onload="initialize();">
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Fun with Photos</h1>
+      <br/> 
+      <div class="grid-container">
+        <div id="court" style="border: solid black; background-color: azure; width: 1000px; height: 600px;" onclick="resumeAction(event);">
+          <div id="photos">
+            <img src="http://lambda.uta.edu/cse5335/p1.jpeg" height="80px" style="margin: 0; padding: 0px; position: absolute;"/>
+            <img src="http://lambda.uta.edu/cse5335/p2.jpeg" height="80px" style="margin: 0; padding: 0px; position: absolute;"/>
+            <img src="http://lambda.uta.edu/cse5335/p3.jpeg" height="80px" style="margin: 0; padding: 0px; position: absolute;"/>
+            <img src="http://lambda.uta.edu/cse5335/p4.jpeg" height="80px" style="margin: 0; padding: 0px; position: absolute;"/>
+            <img src="http://lambda.uta.edu/cse5335/p5.jpeg" height="80px" style="margin: 0; padding: 0px; position: absolute;"/>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; ">Messages:</p> <span style="font-family: Verdana, Geneva, Tahoma, sans-serif;" id="message"></span>
+        </div>
+        
+      </div>
+      
+  </body>
+</html>
